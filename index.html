@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom's Kebab Duri | Kebab Daging Sapi Panggang & Kuliner Malam Favorit Riau</title>
+  <meta name="description" content="Tom's Kebab Duri, Riau. Kebab daging sapi panggang berbumbu rempah, porsi melimpah, kulit renyah gurih, dan keju lumer. Buka setiap hari 16:00 - 23:00 WIB. Pesan langsung via WhatsApp!">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- QRCode.js CDN for Dynamic QRIS Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff1f2',
+              100: '#ffe4e6',
+              200: '#fecdd3',
+              300: '#fda4af',
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+              700: '#be123c',
+              800: '#9f1239',
+              900: '#881337',
+              950: '#4c0519',
+              fire: '#DC2626',
+              crimson: '#991B1B',
+              maroon: '#450A0A',
+              gold: '#F59E0B',
+              dark: '#0A0A0C',
+              card: '#141418',
+              cardBorder: '#27272A'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0A0A0C;
+      color: #F4F4F5;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+    .red-glow {
+      box-shadow: 0 0 40px -10px rgba(220, 38, 38, 0.45);
+    }
+    .red-glow-lg {
+      box-shadow: 0 0 80px -15px rgba(220, 38, 38, 0.35);
+    }
+    .badge-shimmer {
+      background: linear-gradient(90deg, rgba(220,38,38,0.2) 0%, rgba(245,158,11,0.3) 50%, rgba(220,38,38,0.2) 100%);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #141418;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #be123c;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-zinc-100 antialiased selection:bg-red-600 selection:text-white">
+
+  <!-- TOP BAR NOTICE -->
+  <div class="bg-gradient-to-r from-brand-950 via-brand-fire to-brand-950 text-white text-xs py-2 px-4 text-center font-medium border-b border-red-500/30 flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+    <span>🔥 <strong>GERAI DURI BUKA MALAM INI:</strong> 16.00 – 23.00 WIB | Daging Sapi Segar Siap Dipanggang!</span>
+    <a href="#menu" class="underline hover:text-amber-300 font-bold ml-1 hidden sm:inline">Pesan Sekarang →</a>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-brand-dark/95 backdrop-blur-md border-b border-zinc-800/80 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-brand-fire via-red-700 to-brand-950 flex items-center justify-center border border-red-500/40 shadow-lg shadow-red-950 group-hover:scale-105 transition-transform">
+          <svg class="w-7 h-7 text-amber-300" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" opacity="0.3"/>
+            <path d="M13.5 5.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-3 2c-.83 0-1.5.67-1.5 1.5S9.67 10.5 10.5 10.5 12 9.83 12 9s-.67-1.5-1.5-1.5z"/>
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.93V18h-2v-1.07A7.002 7.002 0 016.07 11H7a5 5 0 0010 0h.93a7.002 7.002 0 01-4.93 5.93z"/>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-heading font-black text-2xl tracking-wider text-white">TOM'S <span class="text-red-500">KEBAB</span></span>
+            <span class="bg-red-950/80 text-red-400 border border-red-800/60 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">Duri</span>
+          </div>
+          <p class="text-[11px] text-zinc-400 font-medium">Grill Panas • Daging Melimpah • Halal</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-semibold">
+        <a href="#menu" class="text-zinc-300 hover:text-red-400 transition-colors">Daftar Menu</a>
+        <a href="#keunggulan" class="text-zinc-300 hover:text-red-400 transition-colors">Kenapa Tom's?</a>
+        <a href="#franchise" class="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1.5">
+          <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          <span>Kemitraan Franchise</span>
+        </a>
+        <a href="#lokasi" class="text-zinc-300 hover:text-red-400 transition-colors">Lokasi & Rute</a>
+        <a href="#testimoni" class="text-zinc-300 hover:text-red-400 transition-colors">Ulasan Warga Duri</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <!-- Floating Cart Toggle Button -->
+        <button onclick="toggleCartDrawer()" class="relative bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700/80 p-2.5 rounded-xl flex items-center gap-2 transition-all">
+          <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="hidden sm:inline text-xs font-bold font-heading">Keranjang</span>
+          <span id="cart-count-badge" class="bg-red-600 text-white font-black text-xs px-2 py-0.5 rounded-full">0</span>
+        </button>
+
+        <!-- WhatsApp Quick Link -->
+        <a href="https://wa.me/6281933564845?text=Halo%20Tom's%20Kebab%20Duri,%20saya%20mau%20order" target="_blank" class="hidden sm:flex items-center gap-2 bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-lg shadow-red-600/30 transition-all transform hover:-translate-y-0.5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+          </svg>
+          <span>Chat WA Gerai</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 border-b border-zinc-900">
+    <!-- Atmospheric Background Glows -->
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-red-600/20 blur-[130px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-20 w-96 h-96 bg-amber-600/15 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Punchy Authentic Copy (Anti AI Slop) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-red-500/30 bg-red-950/40 text-red-400 text-xs font-semibold badge-shimmer">
+            <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+            <span>Kebab Nomor 1 di Duri, Riau • 100% Halal</span>
+          </div>
+
+          <h1 class="font-heading font-black text-4xl sm:text-5xl xl:text-6xl text-white tracking-tight leading-[1.08]">
+            GRILL PANAS, <br>
+            <span class="bg-gradient-to-r from-red-500 via-rose-500 to-amber-400 bg-clip-text text-transparent">DAGING MELIMPAH</span>, <br>
+            KULIT CRISPY GURIH.
+          </h1>
+
+          <p class="text-base sm:text-lg text-zinc-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+            Bukan kebab beku pabrikan. Daging sapi pilihan berempah dipanggang segar di burner tegak setiap sore, dibalut tortilla renyah dengan lelehan keju mozzarella dan saus racikan khas Tom’s Kebab.
+          </p>
+
+          <!-- Badges Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0 text-left">
+            <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl">
+              <div class="text-amber-400 font-bold text-sm">🥩 Daging Sapi Asli</div>
+              <div class="text-zinc-400 text-xs">Irisan tebal berbumbu</div>
+            </div>
+            <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl">
+              <div class="text-red-400 font-bold text-sm">🧀 Mozzarella Molor</div>
+              <div class="text-zinc-400 text-xs">Pilihan double cheese</div>
+            </div>
+            <div class="bg-zinc-900/90 border border-zinc-800 p-3 rounded-xl col-span-2 sm:col-span-1">
+              <div class="text-emerald-400 font-bold text-sm">🌶️ Level Pedas Bebas</div>
+              <div class="text-zinc-400 text-xs">Ori sampai rawit gila</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-red-600 hover:bg-red-500 text-white font-heading font-bold text-base px-8 py-4 rounded-2xl shadow-xl shadow-red-600/30 transition-all transform hover:-translate-y-1">
+              <span>PILIH MENU & ORDER</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+
+            <a href="#lokasi" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-700/80 font-heading font-semibold text-base px-6 py-4 rounded-2xl transition-all">
+              <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+              <span>Lihat 2 Cabang Outlet</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Rating -->
+          <div class="flex items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-zinc-400">
+            <div class="flex text-amber-400">
+              ★★★★★
+            </div>
+            <div>
+              <span class="text-white font-bold">4.8 / 5.0</span> dari 100+ Ulasan Google Maps di Duri, Riau
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Food Showcase Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Glow background around image -->
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+            
+            <div class="relative bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 red-glow">
+              <div class="relative h-80 sm:h-96 w-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80" 
+                  alt="Kebab Spesial Tom's Kebab Duri" 
+                  class="w-full h-full object-cover transform hover:scale-105 transition duration-700"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent"></div>
+                
+                <!-- Floating Price Tag -->
+                <div class="absolute top-4 right-4 bg-red-600 text-white font-heading font-black text-sm px-3.5 py-1.5 rounded-full shadow-lg shadow-red-950/60 border border-red-400/40">
+                  Mulai Rp 16.000
+                </div>
+
+                <div class="absolute bottom-4 left-4 right-4 bg-zinc-900/90 backdrop-blur-md p-4 rounded-2xl border border-zinc-700/60">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <span class="text-xs uppercase tracking-wider font-bold text-red-400">Signature Menu</span>
+                      <h3 class="text-lg font-bold text-white font-heading">Kebab Special (Sayur - Daging - Telur - Keju - Sosis)</h3>
+                      <p class="text-xs text-zinc-400">Tortilla renyah dengan isian komplit spesial khas Tom's Kebab</p>
+                    </div>
+                    <button onclick="quickAddHeroItem()" class="bg-red-600 hover:bg-red-500 text-white p-3 rounded-xl transition shadow-md shadow-red-700/40">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Sticker Badge -->
+            <div class="absolute -bottom-6 -left-6 bg-gradient-to-br from-amber-500 to-amber-700 text-zinc-950 font-heading font-black p-4 rounded-2xl shadow-xl transform -rotate-3 border-2 border-amber-300 hidden sm:block">
+              <div class="text-2xl leading-none">100%</div>
+              <div class="text-[10px] tracking-tight uppercase font-bold text-zinc-900">Sapi Pilihan</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK HIGHLIGHT BANNER: PROMO MALAM -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-20">
+    <div class="bg-gradient-to-r from-red-950 via-zinc-900 to-brand-950 border border-red-600/40 p-5 sm:p-6 rounded-2xl red-glow flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-red-600/20 border border-red-500/40 flex items-center justify-center shrink-0">
+          <span class="text-2xl">🔥</span>
+        </div>
+        <div>
+          <span class="bg-red-600 text-white text-[10px] font-black tracking-wider uppercase px-2 py-0.5 rounded">Paket Hemat Malam</span>
+          <h4 class="text-base sm:text-lg font-bold text-white font-heading mt-1">Paket Komplit: Kebab Jumbo Beef + Es Teh Tarik</h4>
+          <p class="text-xs text-zinc-400">Porsi kenyang malam hari, hemat Rp 5.000 dibanding beli satuan.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 w-full md:w-auto justify-between md:justify-end">
+        <div class="text-right">
+          <span class="text-xs text-zinc-500 line-through">Rp 35.000</span>
+          <div class="text-xl font-heading font-black text-amber-400">Rp 30.000</div>
+        </div>
+        <button onclick="addPromoPackage()" class="bg-gradient-to-r from-red-600 to-rose-700 hover:from-red-500 hover:to-rose-600 text-white font-heading font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl shadow-lg transition">
+          + Klaim Promo
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-red-600/30 bg-red-950/20 text-red-400 text-xs font-semibold mb-3">
+        <span>📖 DAFTAR MENU LENGKAP</span>
+      </div>
+      <h2 class="font-heading font-black text-3xl sm:text-4xl text-white tracking-tight">
+        PILIH KEBAB & KULINER FAVORITMU
+      </h2>
+      <p class="text-zinc-400 text-sm sm:text-base mt-2">
+        Semua menu diracik segar saat dipesan. Pilih level pedas dan topping keju favorit sesuai seleramu!
+      </p>
+
+      <!-- Category Sticky Filter Bar (Menu Bertumpuk 4 Kategori) -->
+      <div class="sticky top-20 z-30 bg-brand-dark/95 backdrop-blur-md py-4 -mx-4 px-4 border-b border-zinc-800/80 mb-10">
+        <div class="flex items-center justify-center gap-2 flex-wrap max-w-4xl mx-auto">
+          <a href="#kategori-kebab-putih" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-zinc-700/80 hover:border-red-500/60 text-xs sm:text-sm font-bold font-heading px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+            <span>🌯</span>
+            <span>Kebab Putih Original</span>
+          </a>
+          <a href="#kategori-black-kebab" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-zinc-700/80 hover:border-red-500/60 text-xs sm:text-sm font-bold font-heading px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+            <span>🖤</span>
+            <span>Black Kebab</span>
+          </a>
+          <a href="#kategori-burger" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-zinc-700/80 hover:border-red-500/60 text-xs sm:text-sm font-bold font-heading px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+            <span>🍔</span>
+            <span>Burger</span>
+          </a>
+          <a href="#kategori-juices" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white border border-zinc-700/80 hover:border-red-500/60 text-xs sm:text-sm font-bold font-heading px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm">
+            <span>🥤</span>
+            <span>Juices & Drinks</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu Bertumpuk Container (Stacked Sections) -->
+    <div id="stacked-menu-container" class="space-y-20">
+      <!-- Generated by JavaScript into 4 Distinct Stacked Sections -->
+    </div>
+  </section>
+
+  <!-- KENAPA HARUS TOM'S KEBAB (ANTI AI SLOP / REAL QUALITY) -->
+  <section id="keunggulan" class="py-20 bg-gradient-to-b from-brand-dark via-brand-950/40 to-brand-dark border-y border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold tracking-widest text-red-500 uppercase">Standar Rasa & Kualitas</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mt-1">
+          KENAPA TOM'S KEBAB JADI FAVORIT DI DURI?
+        </h2>
+        <p class="text-zinc-400 text-sm mt-3">
+          Kami menjaga cita rasa otentik jajanan malam dengan bahan berkualitas, bukan sekadar kebab cepat saji biasa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-zinc-900/90 border border-zinc-800/90 p-6 rounded-2xl relative overflow-hidden group hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-500 mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">Daging Sapi Marinasi Rempah</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Daging sapi dimarinasi dengan rempah gurih khas, dipanggang di mesin pemanggang vertikal sehingga lapisan luarnya garing berkaramel tapi dagingnya tetap juicy.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-zinc-900/90 border border-zinc-800/90 p-6 rounded-2xl relative overflow-hidden group hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500 mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">Tortilla Homemade Renyah</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Kulit kebab dipanggang dengan olesan butter berkualitas. Teksturnya krispi di luar, empuk di dalam, dan tidak mudah sobek saat digigit.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-zinc-900/90 border border-zinc-800/90 p-6 rounded-2xl relative overflow-hidden group hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-500 mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">Saus Spesial & Mayo Gurih</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Bukan saus botolan biasa. Perpaduan garlic mayo creamy, saus keju cheddar leleh, dan sambal cabai racik segar yang nikmat dan tidak enek.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-zinc-900/90 border border-zinc-800/90 p-6 rounded-2xl relative overflow-hidden group hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-500 mb-4 group-hover:scale-110 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">Buka Malam & Cepat Saji</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Cocok untuk makan malam, nongkrong santai, atau dibawa pulang. Proses pembuatan cepat dan higienis tanpa harus menunggu lama.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOKASI & GOOGLE MAPS INTEGRATION: 2 CABANG OUTLET -->
+  <section id="lokasi" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-red-500/30 bg-red-950/30 text-red-400 text-xs font-semibold uppercase tracking-wider mb-3">
+        📍 2 Cabang Gerai Fisik di Duri
+      </div>
+      <h2 class="font-heading font-black text-3xl sm:text-4xl text-white">
+        MAMPIR KE OUTLET RESMI TOM'S KEBAB DURI
+      </h2>
+      <p class="text-sm text-zinc-400 mt-2 leading-relaxed">
+        Nikmati kelezatan Tom's Kebab langsung di 2 lokasi strategis kota Duri. Datang langsung untuk pesan bungkus (*takeaway*) atau pesan online lewat WhatsApp.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      <!-- Outlet 1: Jl. Jend. Sudirman -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-red-500/50 transition shadow-xl relative overflow-hidden group">
+        <div class="absolute -right-12 -top-12 w-40 h-40 bg-red-600/10 rounded-full blur-3xl group-hover:bg-red-600/20 transition"></div>
+        
+        <div>
+          <div class="flex items-center justify-between gap-3 mb-4">
+            <span class="bg-red-600/20 border border-red-500/40 text-red-400 font-heading font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+              Cabang 1 • Utama
+            </span>
+            <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Buka Setiap Hari (16:00 - 23:00)
+            </span>
+          </div>
+
+          <h3 class="font-heading font-black text-2xl text-white group-hover:text-red-400 transition">
+            Tom's Kebab - Jl. Jenderal Sudirman
+          </h3>
+          <p class="text-xs text-zinc-400 mt-1">Duri, Kec. Mandau, Kabupaten Bengkalis, Riau</p>
+
+          <div class="mt-6 space-y-3">
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+              <div class="w-8 h-8 rounded-lg bg-red-500/20 text-red-400 flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Alamat Lengkap:</div>
+                <div class="text-zinc-400 mt-0.5">Jl. Jend. Sudirman, Duri, Kec. Mandau, Kabupaten Bengkalis, Riau 28784</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Layanan & Jam Operasional:</div>
+                <div class="text-zinc-400 mt-0.5">16:00 – 23:00 WIB • Takeaway & Delivery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 mt-6 border-t border-zinc-800 flex flex-col sm:flex-row gap-3">
+          <a href="https://maps.app.goo.gl/bsCp9WGUG8pZDT6e8" target="_blank" class="flex-1 inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-500 text-white font-heading font-bold text-xs uppercase px-5 py-3 rounded-xl shadow-lg shadow-red-600/30 transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span>Petunjuk Google Maps</span>
+          </a>
+          <a href="https://wa.me/6281933564845?text=Halo%20Tom's%20Kebab,%20saya%20mau%20order%20ke%20Cabang%20Jl.%20Sudirman" target="_blank" class="inline-flex items-center justify-center gap-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-heading font-bold text-xs uppercase px-4 py-3 rounded-xl transition">
+            <span>Pesan ke Cabang Ini</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Outlet 2: Jl. Mawar -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-amber-500/50 transition shadow-xl relative overflow-hidden group">
+        <div class="absolute -right-12 -top-12 w-40 h-40 bg-amber-600/10 rounded-full blur-3xl group-hover:bg-amber-600/20 transition"></div>
+        
+        <div>
+          <div class="flex items-center justify-between gap-3 mb-4">
+            <span class="bg-amber-500/20 border border-amber-500/40 text-amber-300 font-heading font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider">
+              Cabang 2 • Jl. Mawar
+            </span>
+            <span class="text-[11px] font-semibold text-emerald-400 flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Buka Setiap Hari (16:00 - 23:00)
+            </span>
+          </div>
+
+          <h3 class="font-heading font-black text-2xl text-white group-hover:text-amber-400 transition">
+            Tom's Kebab - Jl. Mawar
+          </h3>
+          <p class="text-xs text-zinc-400 mt-1">Duri, Kec. Mandau, Kabupaten Bengkalis, Riau</p>
+
+          <div class="mt-6 space-y-3">
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Alamat Lengkap:</div>
+                <div class="text-zinc-400 mt-0.5">Jl. Mawar, Duri, Kec. Mandau, Kabupaten Bengkalis, Riau 28784</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-2xl bg-zinc-950/70 border border-zinc-800/80">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Layanan & Jam Operasional:</div>
+                <div class="text-zinc-400 mt-0.5">16:00 – 23:00 WIB • Takeaway & Delivery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 mt-6 border-t border-zinc-800 flex flex-col sm:flex-row gap-3">
+          <a href="https://maps.app.goo.gl/fUrCvTDtuYdWhBJn9" target="_blank" class="flex-1 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-zinc-950 font-heading font-black text-xs uppercase px-5 py-3 rounded-xl shadow-lg transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span>Petunjuk Google Maps</span>
+          </a>
+          <a href="https://wa.me/6287792827956?text=Halo%20Tom's%20Kebab,%20saya%20mau%20order%20ke%20Cabang%20Jl.%20Mawar" target="_blank" class="inline-flex items-center justify-center gap-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-heading font-bold text-xs uppercase px-4 py-3 rounded-xl transition">
+            <span>Pesan ke Cabang Ini</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ULASAN PELANGGAN ASLI DURI (REAL TESTIMONIALS, ANTI-SLOP) -->
+  <section id="testimoni" class="py-20 bg-zinc-950/60 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold tracking-widest text-red-500 uppercase">Kata Warga Duri</span>
+        <h2 class="font-heading font-black text-3xl sm:text-4xl text-white mt-1">
+          APA KATA MEREKA TENTANG TOM'S KEBAB?
+        </h2>
+        <p class="text-zinc-400 text-sm mt-2">
+          Ulasan jujur dari penikmat kebab malam di sekitaran Mandau & Duri Kota.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-300 text-sm leading-relaxed italic">
+              "Kebab paling mantap di Duri! Daging sapinya ga pelit sama sekali, irisan tebal dan berasa rempahnya. Kulitnya renyah garing pas digigit, saus kejunya juga lumer banget. Wajib coba yang ukuran Jumbo!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-red-600/30 text-red-400 font-bold flex items-center justify-center text-xs">
+              DK
+            </div>
+            <div>
+              <div class="text-white font-bold text-sm">Dedi Kurniawan</div>
+              <div class="text-[11px] text-zinc-500">Warga Air Jamban, Duri</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-zinc-900 border border-red-900/50 p-6 rounded-2xl flex flex-col justify-between red-glow">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex text-amber-400 text-sm">★★★★★</div>
+              <span class="bg-red-950 text-red-400 text-[10px] font-bold px-2 py-0.5 rounded border border-red-800/60">Langganan</span>
+            </div>
+            <p class="text-zinc-300 text-sm leading-relaxed italic">
+              "Suka banget sama level pedasnya yang beneran pedas mantap pake cabe racik, bukan cuma saus cabe botolan murah. Anak-anak suka burger dan roti maryam coklat kejunya. Pelayanan cepat dan mas-masnya ramah!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-amber-500/30 text-amber-400 font-bold flex items-center justify-center text-xs">
+              SR
+            </div>
+            <div>
+              <div class="text-white font-bold text-sm">Siti Rahmawati</div>
+              <div class="text-[11px] text-zinc-500">Ibu Rumah Tangga, Mandau</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+            <p class="text-zinc-300 text-sm leading-relaxed italic">
+              "Penyelamat lapar tiap pulang kerja lembur malam. Porsinya bikin kenyang banget, harganya juga sangat ramah di kantong. Rekomen pesan duluan lewat WhatsApp biar pas nyampe gerai tinggal ambil ga perlu antre."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-zinc-800 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-rose-600/30 text-rose-400 font-bold flex items-center justify-center text-xs">
+              RP
+            </div>
+            <div>
+              <div class="text-white font-bold text-sm">Rizky Pratama</div>
+              <div class="text-[11px] text-zinc-500">Pekerja Swasta, Duri</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FRANCHISE & KEMITRAAN BISNIS TOM'S KEBAB (ANTI AI SLOP) -->
+  <!-- ============================================================ -->
+  <section id="franchise" class="py-24 bg-gradient-to-b from-[#0e0708] via-brand-dark to-[#0A0A0C] border-t border-zinc-900 relative overflow-hidden">
+    <!-- Atmospheric Red/Amber Glows -->
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-red-600/15 blur-[120px] rounded-full pointer-events-none"></div>
+    <div class="absolute bottom-10 -right-20 w-[450px] h-[450px] bg-amber-600/10 blur-[130px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/40 bg-amber-950/30 text-amber-300 text-xs font-bold tracking-wider uppercase mb-3">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          <span>Peluang Usaha FnB Menjanjikan • Buka Cabang Baru</span>
+        </div>
+        <h2 class="font-heading font-black text-3xl sm:text-5xl text-white tracking-tight leading-tight">
+          GABUNG JADI MITRA <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-500 to-amber-400">FRANCHISE TOM'S KEBAB</span>
+        </h2>
+        <p class="text-zinc-300 text-sm sm:text-base mt-4 leading-relaxed">
+          Bisnis kuliner malam yang sudah terbukti ramai dan dicintai warga Duri, Riau. Sistem operasional siap jalan (turnkey business), modal terukur, bahan baku standar pabrikasi higienis, dan <strong>tanpa potongan royalti bulanan (100% keuntungan milik mitra)</strong>!
+        </p>
+      </div>
+
+      <!-- 4 Keunggulan Franchise Tom's Kebab -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 font-black text-xl mb-4 group-hover:scale-110 transition">
+            💰
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">0% Royalty Fee</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Tidak ada pungutan bagi hasil atau biaya royalti bulanan. Seluruh laba bersih penjualan di gerai Anda 100% menjadi hak Anda sepenuhnya.
+          </p>
+        </div>
+
+        <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl relative overflow-hidden group hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 font-black text-xl mb-4 group-hover:scale-110 transition">
+            🥩
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">Suplai Bahan Baku Pasti</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Pasokan daging sapi olahan rempah rahasia, tortilla lembut crispy, dan saus racikan khas Tom's disuplai langsung secara konsisten dan higienis.
+          </p>
+        </div>
+
+        <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl relative overflow-hidden group hover:border-amber-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 font-black text-xl mb-4 group-hover:scale-110 transition">
+            ⏱️
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">BEP Cepat (3-6 Bulan)</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Margin keuntungan per porsi mencapai 40% - 55%. Dengan estimasi 50-90 porsi per malam, potensi balik modal sangat cepat dan minim resiko.
+          </p>
+        </div>
+
+        <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl relative overflow-hidden group hover:border-red-500/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 font-black text-xl mb-4 group-hover:scale-110 transition">
+            🎓
+          </div>
+          <h3 class="font-heading font-bold text-lg text-white mb-2">Pelatihan & SOP Lengkap</h3>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Kami latih staf Anda dari nol hingga mahir memotong daging burner, memanggang tortilla, meracik saus, hingga SOP pelayanan cepat dan ramah.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Paket Kemitraan (3 Pilihan Paket Realistis) -->
+      <div class="mb-16">
+        <div class="text-center mb-8">
+          <span class="text-xs font-bold text-red-500 uppercase tracking-widest">PILIHAN INVESTASI</span>
+          <h3 class="font-heading font-black text-2xl sm:text-3xl text-white mt-1">PAKET USAHA KEMITRAAN TOM'S KEBAB</h3>
+          <p class="text-xs text-zinc-400 mt-1">Pilih paket yang paling sesuai dengan lokasi dan anggaran Anda</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Paket 1: Booth Street Outdoor -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between hover:border-zinc-700 transition">
+            <div>
+              <span class="text-[10px] font-bold text-zinc-400 bg-zinc-800 px-2.5 py-1 rounded-full uppercase tracking-wider">Paket Hemat</span>
+              <h4 class="font-heading font-black text-xl text-white mt-3">Paket Booth Portable</h4>
+              <p class="text-xs text-zinc-400 mt-1">Cocok untuk teras minimarket, pujasera, atau event kuliner.</p>
+              
+              <div class="my-5 pb-5 border-b border-zinc-800">
+                <span class="text-xs text-zinc-500">Nilai Investasi:</span>
+                <div class="font-heading font-black text-2xl text-white">Rp 12.500.000</div>
+                <div class="text-[11px] text-emerald-400 font-medium mt-0.5">● Langsung Siap Jualan</div>
+              </div>
+
+              <ul class="space-y-2 text-xs text-zinc-300">
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Booth lipat branding eksklusif Tom's Kebab</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Burner panggangan kebab burner gas 1 tungku</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Wajan flat pan panggangan & pisau kebab khusus</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Bahan baku awal 100 porsi kebab lengkap</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Seragam kru Tom's Kebab & celemek (2 set)</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Buku panduan SOP & video tutorial resep</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-zinc-800">
+              <button onclick="selectFranchisePackage('Paket Booth Portable (Rp 12.5 Juta)')" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white font-heading font-bold text-xs uppercase py-3 rounded-xl transition">
+                Pilih Paket Portable
+              </button>
+            </div>
+          </div>
+
+          <!-- Paket 2: Gerobak Kontainer Estetik (Best Seller) -->
+          <div class="bg-gradient-to-b from-zinc-900 via-zinc-900 to-red-950/30 border-2 border-red-500 rounded-3xl p-6 flex flex-col justify-between red-glow relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-lg">
+              PALING POPULER & CEPAT BEP
+            </div>
+
+            <div>
+              <span class="text-[10px] font-bold text-amber-400 bg-amber-950/80 px-2.5 py-1 rounded-full uppercase tracking-wider border border-amber-800">Best Seller</span>
+              <h4 class="font-heading font-black text-2xl text-white mt-3">Paket Kontainer Reguler</h4>
+              <p class="text-xs text-zinc-300 mt-1">Booth kontainer baja modern warna merah khas Tom's Kebab dengan lampu neon box.</p>
+              
+              <div class="my-5 pb-5 border-b border-zinc-800">
+                <span class="text-xs text-zinc-400">Nilai Investasi:</span>
+                <div class="font-heading font-black text-3xl text-amber-400">Rp 22.000.000</div>
+                <div class="text-[11px] text-emerald-400 font-medium mt-0.5">● Lengkap Peralatan + Bahan Awal 250 Porsi</div>
+              </div>
+
+              <ul class="space-y-2.5 text-xs text-zinc-200">
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Gerobak Kontainer semi-baja tahan karat (2m x 1.5m)</li>
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Neon Box bulat menyala & LED lighting estetis</li>
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> 1 Set Mesin Burner Kebab Heavy Duty & Wajan Baja Tebal</li>
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Deep Fryer listrik/gas untuk kentang goreng & burger</li>
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Bahan baku awal 250 porsi (Daging sapi, Tortilla, Saus, Keju)</li>
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Packaging kardus kebab eksklusif Tom's (250 pcs)</li>
+                <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">✓</span> Pelatihan langsung on-site / video call sampai mahir</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-zinc-800">
+              <button onclick="selectFranchisePackage('Paket Kontainer Reguler (Rp 22 Juta)')" class="w-full bg-red-600 hover:bg-red-500 text-white font-heading font-bold text-xs uppercase py-3.5 rounded-xl shadow-lg shadow-red-600/30 transition">
+                Daftar Paket Kontainer
+              </button>
+            </div>
+          </div>
+
+          <!-- Paket 3: Outlet / Mini Cafe FnB -->
+          <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between hover:border-zinc-700 transition">
+            <div>
+              <span class="text-[10px] font-bold text-amber-400 bg-zinc-800 px-2.5 py-1 rounded-full uppercase tracking-wider">Konsep Dine-In</span>
+              <h4 class="font-heading font-black text-xl text-white mt-3">Paket Gerai Mini Outlet</h4>
+              <p class="text-xs text-zinc-400 mt-1">Konsep kedai ruko / cafe kecil dengan fasilitas makan di tempat (*dine-in*).</p>
+              
+              <div class="my-5 pb-5 border-b border-zinc-800">
+                <span class="text-xs text-zinc-500">Nilai Investasi:</span>
+                <div class="font-heading font-black text-2xl text-white">Rp 38.000.000</div>
+                <div class="text-[11px] text-emerald-400 font-medium mt-0.5">● Menu Lengkap + Meja Kursi Outdoor</div>
+              </div>
+
+              <ul class="space-y-2 text-xs text-zinc-300">
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Desain interior layout gerai & banner dekorasi 3D</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> 2 Set Mesin Burner Kebab Double Kapasitas</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Kompor grill burger & deep fryer komersial</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> 4 Set Meja & Kursi kafe outdoor estetik</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Bahan baku awal 500 porsi kebab, burger & minuman</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Sistem Kasir POS Tablet & Printer Struk Bluetooth</li>
+                <li class="flex items-center gap-2"><span class="text-red-500 font-bold">✓</span> Bantuan promosi iklan media sosial lokal peresmian</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-zinc-800">
+              <button onclick="selectFranchisePackage('Paket Gerai Mini Outlet (Rp 38 Juta)')" class="w-full bg-zinc-800 hover:bg-zinc-700 text-white font-heading font-bold text-xs uppercase py-3 rounded-xl transition">
+                Pilih Paket Mini Outlet
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Simulasi Perhitungan Balik Modal (Transparan & Anti-Slop) -->
+      <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 sm:p-8 mb-16">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">SIMULASI KEUNTUNGAN MITRA</span>
+          <h3 class="font-heading font-black text-2xl text-white mt-1">BERAPA POTENSI LABA BERSIH BULANAN?</h3>
+          <p class="text-xs text-zinc-400 mt-2">
+            Perhitungan realistis berdasarkan rata-rata penjualan gerai Tom's Kebab di area perkotaan dengan jam operasional sore-malam (16.00 - 23.00 WIB):
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
+          <div class="bg-zinc-950 p-4 rounded-2xl border border-zinc-800">
+            <div class="text-xs text-zinc-400">Penjualan Harian Rata-rata:</div>
+            <div class="text-xl font-heading font-bold text-white mt-1">60 Porsi / Hari</div>
+            <div class="text-[11px] text-zinc-500 mt-0.5">Rata-rata harga Rp 22.000</div>
+          </div>
+
+          <div class="bg-zinc-950 p-4 rounded-2xl border border-zinc-800">
+            <div class="text-xs text-zinc-400">Omset Bulanan (30 Hari):</div>
+            <div class="text-xl font-heading font-bold text-amber-400 mt-1">Rp 39.600.000</div>
+            <div class="text-[11px] text-zinc-500 mt-0.5">Bruto kotor</div>
+          </div>
+
+          <div class="bg-zinc-950 p-4 rounded-2xl border border-zinc-800">
+            <div class="text-xs text-zinc-400">HPP & Biaya Operasional:</div>
+            <div class="text-xl font-heading font-bold text-red-400 mt-1">~ Rp 25.000.000</div>
+            <div class="text-[11px] text-zinc-500 mt-0.5">Bahan baku + sewa tempat + gaji staf</div>
+          </div>
+
+          <div class="bg-gradient-to-br from-red-950 to-zinc-950 p-4 rounded-2xl border border-red-500/50 red-glow">
+            <div class="text-xs text-red-300 font-bold">Estimasi Laba Bersih / Bulan:</div>
+            <div class="text-2xl font-heading font-black text-white mt-1">Rp 14.600.000</div>
+            <div class="text-[11px] text-emerald-400 font-bold mt-0.5">★ Balik modal dalam 2 - 4 bulan!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulir Pendaftaran Mitra Franchise Interaktif -->
+      <div id="franchise-form-box" class="max-w-3xl mx-auto bg-zinc-900 border border-red-600/40 rounded-3xl p-6 sm:p-10 red-glow">
+        <div class="text-center mb-8">
+          <div class="w-12 h-12 rounded-2xl bg-red-600/20 text-red-500 flex items-center justify-center mx-auto mb-3 text-2xl">
+            🤝
+          </div>
+          <h3 class="font-heading font-black text-2xl sm:text-3xl text-white">FORMULIR PENGAJUAN KEMITRAAN</h3>
+          <p class="text-xs sm:text-sm text-zinc-400 mt-1">
+            Isi data di bawah ini untuk konsultasi langsung dengan Manajemen Kemitraan Tom's Kebab via WhatsApp.
+          </p>
+        </div>
+
+        <form id="franchise-form" onsubmit="submitFranchiseApplication(event)" class="space-y-4">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1.5">Nama Lengkap:</label>
+              <input type="text" id="fran-name" required placeholder="Contoh: Hendra Wijaya" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1.5">Nomor WhatsApp Aktif:</label>
+              <input type="tel" id="fran-phone" required placeholder="Contoh: 0812xxxxxxxx" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1.5">Rencana Kota / Lokasi Buka Gerai:</label>
+              <input type="text" id="fran-city" required placeholder="Contoh: Pekanbaru / Duri / Dumai / Kandis" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1.5">Pilihan Paket Kemitraan:</label>
+              <select id="fran-package" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-red-500">
+                <option value="Paket Kontainer Reguler (Rp 22 Juta)">Paket Kontainer Reguler (Rp 22 Juta - Rekomendasi)</option>
+                <option value="Paket Booth Portable (Rp 12.5 Juta)">Paket Booth Portable (Rp 12.5 Juta)</option>
+                <option value="Paket Gerai Mini Outlet (Rp 38 Juta)">Paket Gerai Mini Outlet (Rp 38 Juta)</option>
+                <option value="Konsultasi Dulu / Custom Location">Mau Konsultasi Dulu Sesuai Budget</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1.5">Kondisi Lokasi Usaha Saat Ini:</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+              <label class="flex items-center gap-2 p-2.5 bg-zinc-950 border border-zinc-800 rounded-xl text-xs cursor-pointer hover:border-red-500">
+                <input type="radio" name="fran-loc-status" value="Sudah Ada Tempat (Milik Sendiri/Sewa)" checked class="accent-red-600">
+                <span class="text-zinc-300">Sudah Ada Tempat</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 bg-zinc-950 border border-zinc-800 rounded-xl text-xs cursor-pointer hover:border-red-500">
+                <input type="radio" name="fran-loc-status" value="Masih Mencari Lokasi Strategis" class="accent-red-600">
+                <span class="text-zinc-300">Sedang Cari Lokasi</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 bg-zinc-950 border border-zinc-800 rounded-xl text-xs cursor-pointer hover:border-red-500">
+                <input type="radio" name="fran-loc-status" value="Butuh Bantuan Survei Tim Tom's" class="accent-red-600">
+                <span class="text-zinc-300">Minta Dibantu Survei</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1.5">Pertanyaan atau Catatan Tambahan (Opsional):</label>
+            <textarea id="fran-notes" rows="2" placeholder="Tuliskan jika ada pertanyaan terkait jadwal pembukaan, estimasi pengiriman peralatan, dsb..." class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-gradient-to-r from-red-600 via-rose-600 to-amber-500 hover:from-red-500 hover:to-amber-400 text-white font-heading font-black text-sm uppercase py-4 rounded-xl shadow-xl shadow-red-600/30 flex items-center justify-center gap-2 transition transform hover:-translate-y-0.5">
+              <span>KIRIM PENGAJUAN KEMITRAAN VIA WHATSAPP</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </button>
+            <p class="text-[11px] text-zinc-500 text-center mt-2.5">
+              🔒 Data Anda aman dan langsung terhubung dengan tim kemitraan resmi Tom's Kebab.
+            </p>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="py-16 max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10">
+      <h3 class="font-heading font-black text-2xl sm:text-3xl text-white">PERTANYAAN UMUM (FAQ)</h3>
+      <p class="text-xs sm:text-sm text-zinc-400 mt-1">Hal yang sering ditanyakan pelanggan sebelum memesan</p>
+    </div>
+
+    <div class="space-y-3">
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+        <h4 class="font-bold text-sm text-white flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+          <span>Apakah bisa pesan antar (delivery) di area Duri?</span>
+          <span class="text-red-500">+</span>
+        </h4>
+        <p class="text-xs text-zinc-400 mt-2 hidden">
+          Bisa! Kamu bisa pesan langsung melalui fitur keranjang website ini lalu klik kirim ke WhatsApp. Kami melayani pengantaran di seputaran kota Duri dan Mandau.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+        <h4 class="font-bold text-sm text-white flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+          <span>Apakah daging dan bahan di Tom's Kebab Halal?</span>
+          <span class="text-red-500">+</span>
+        </h4>
+        <p class="text-xs text-zinc-400 mt-2 hidden">
+          100% Halal dan Higienis. Daging sapi dipotong dan diproses sesuai syariat, begitu juga saus dan seluruh bahan baku pelengkap lainnya.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+        <h4 class="font-bold text-sm text-white flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+          <span>Bagaimana cara mendaftar dan membuka Franchise Tom's Kebab?</span>
+          <span class="text-red-500">+</span>
+        </h4>
+        <p class="text-xs text-zinc-400 mt-2 hidden">
+          Sangat mudah! Pilih paket kemitraan yang Anda inginkan (Booth Portable, Kontainer Baja, atau Mini Outlet), isi formulir pengajuan di atas atau klik tombol WhatsApp Kemitraan. Tim Tom's Kebab akan melakukan konsultasi lokasi, persiapan pengiriman alat, dan pendampingan pelatihan sampai gerai Anda buka.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+        <h4 class="font-bold text-sm text-white flex items-center justify-between cursor-pointer" onclick="toggleFaq(this)">
+          <span>Apakah ada biaya royalti bulanan atau bagi hasil keuntungan?</span>
+          <span class="text-red-500">+</span>
+        </h4>
+        <p class="text-xs text-zinc-400 mt-2 hidden">
+          Tidak ada (0% Royalty Fee)! Seluruh hasil laba bersih gerai 100% menjadi milik mitra. Mitra hanya membeli bahan baku resmi (daging sapi rempah, kulit tortilla, saus racik, dan kemasan) dari pusat untuk menjaga konsistensi rasa dan kualitas brand.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-zinc-900 py-12 text-zinc-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center text-white font-heading font-black">
+          TK
+        </div>
+        <div>
+          <span class="font-heading font-bold text-white text-base">TOM'S KEBAB DURI</span>
+          <p class="text-zinc-500 text-[11px]">Cita Rasa Kebab Spesial Duri, Bengkalis, Riau</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#menu" class="hover:text-red-400 transition">Menu</a>
+        <a href="#franchise" class="hover:text-amber-400 transition">Info Franchise</a>
+        <a href="#lokasi" class="hover:text-red-400 transition">2 Cabang Gerai</a>
+        <a href="https://maps.app.goo.gl/bsCp9WGUG8pZDT6e8" target="_blank" class="hover:text-red-400 transition">Maps Sudirman</a>
+        <a href="https://maps.app.goo.gl/fUrCvTDtuYdWhBJn9" target="_blank" class="hover:text-amber-400 transition">Maps Mawar</a>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p>© 2026 Tom's Kebab Duri. All Rights Reserved.</p>
+        <p class="text-[10px] text-zinc-600 mt-0.5">Website resmi pemesanan langsung cepat tanpa perantara.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: KUSTOMISASI MENU SEBELUM MASUK KERANJANG -->
+  <!-- ============================================================ -->
+  <div id="customize-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-zinc-900 border border-zinc-700/80 rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto custom-scrollbar p-6 space-y-6 red-glow">
+      
+      <!-- Modal Header -->
+      <div class="flex items-start justify-between pb-4 border-b border-zinc-800">
+        <div>
+          <span id="modal-category-badge" class="text-[10px] font-bold text-red-400 bg-red-950 px-2 py-0.5 rounded border border-red-800">KEBAB</span>
+          <h3 id="modal-title" class="font-heading font-black text-xl text-white mt-1">Nama Item</h3>
+          <p id="modal-desc" class="text-xs text-zinc-400 mt-0.5">Deskripsi bahan item...</p>
+        </div>
+        <button onclick="closeModal()" class="text-zinc-400 hover:text-white p-2 rounded-lg bg-zinc-800">
+          ✕
+        </button>
+      </div>
+
+      <!-- Option 1: Level Pedas & Racikan Saus -->
+      <div id="option-spicy-container" class="space-y-2">
+        <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider">1. Level Pedas & Racikan Saus:</label>
+        <div class="grid grid-cols-2 gap-2.5">
+          <label class="p-3 rounded-xl border border-zinc-700 bg-zinc-950/60 cursor-pointer hover:border-red-500 transition flex items-center gap-2.5 text-xs">
+            <input type="radio" name="item-spicy" value="Normal" checked class="accent-red-600">
+            <div>
+              <span class="text-white font-bold block">Normal</span>
+              <span class="text-[10px] text-zinc-400">Pedas standar saus sambal + mayo</span>
+            </div>
+          </label>
+          <label class="p-3 rounded-xl border border-zinc-700 bg-zinc-950/60 cursor-pointer hover:border-red-500 transition flex items-center gap-2.5 text-xs">
+            <input type="radio" name="item-spicy" value="Tidak Pedas (Saos Tomat)" class="accent-red-600">
+            <div>
+              <span class="text-amber-400 font-bold block">Tidak Pedas</span>
+              <span class="text-[10px] text-zinc-400">Pakai Saos Tomat (Aman anak)</span>
+            </div>
+          </label>
+          <label class="p-3 rounded-xl border border-zinc-700 bg-zinc-950/60 cursor-pointer hover:border-red-500 transition flex items-center gap-2.5 text-xs">
+            <input type="radio" name="item-spicy" value="Tanpa Mayo" class="accent-red-600">
+            <div>
+              <span class="text-zinc-200 font-bold block">Tanpa Mayo</span>
+              <span class="text-[10px] text-zinc-400">Hanya saus sambal/tomat murni</span>
+            </div>
+          </label>
+          <label class="p-3 rounded-xl border border-zinc-700 bg-zinc-950/60 cursor-pointer hover:border-red-500 transition flex items-center gap-2.5 text-xs">
+            <input type="radio" name="item-spicy" value="Mayo Saja" class="accent-red-600">
+            <div>
+              <span class="text-zinc-200 font-bold block">Mayo Saja</span>
+              <span class="text-[10px] text-zinc-400">Hanya mayones tanpa saus sambal</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Option 2: Extra Topping -->
+      <div id="option-topping-container" class="space-y-2">
+        <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider">2. Tambahan Topping (Opsional):</label>
+        <div class="space-y-2">
+          <label class="flex items-center justify-between p-3 rounded-xl border border-zinc-800 bg-zinc-950/40 cursor-pointer hover:border-amber-500/60 transition">
+            <div class="flex items-center gap-2.5">
+              <input type="checkbox" name="item-topping" value="Ekstra Keju" data-price="3000" onchange="calculateModalTotal()" class="accent-amber-500 rounded">
+              <span class="text-xs text-white font-semibold">🧀 Ekstra Keju</span>
+            </div>
+            <span class="text-xs text-amber-400 font-bold">+Rp 3.000</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Catatan Khusus -->
+      <div>
+        <label class="block text-xs font-bold text-zinc-300 uppercase tracking-wider mb-1">Catatan Khusus:</label>
+        <input type="text" id="modal-notes" placeholder="Contoh: Saus tomat dibanyakin, tanpa bawang bombay..." class="w-full bg-zinc-950 border border-zinc-700 rounded-xl px-3.5 py-2 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500">
+      </div>
+
+      <!-- Jumlah Pesanan (Qty) -->
+      <div class="p-3.5 rounded-2xl bg-zinc-950/70 border border-zinc-800 flex items-center justify-between">
+        <div>
+          <label class="block text-xs font-bold text-zinc-200 uppercase tracking-wider">Jumlah Pesanan:</label>
+          <span class="text-[11px] text-zinc-400">Atur porsi untuk item ini</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <button type="button" onclick="adjustModalQty(-1)" class="w-9 h-9 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-white font-bold text-lg flex items-center justify-center transition border border-zinc-700 active:scale-95">
+            −
+          </button>
+          <span id="modal-qty-display" class="font-heading font-black text-base text-white w-6 text-center">1</span>
+          <button type="button" onclick="adjustModalQty(1)" class="w-9 h-9 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-lg flex items-center justify-center transition shadow-md shadow-red-700/40 active:scale-95">
+            +
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="pt-4 border-t border-zinc-800 flex items-center justify-between">
+        <div>
+          <span class="text-[11px] text-zinc-400">Total Harga:</span>
+          <div id="modal-total-display" class="font-heading font-black text-xl text-amber-400">Rp 0</div>
+        </div>
+        <button onclick="confirmAddToCart()" class="bg-red-600 hover:bg-red-500 text-white font-heading font-bold text-xs uppercase px-6 py-3 rounded-xl shadow-lg shadow-red-600/30 transition">
+          + Masukkan Keranjang
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SLIDE-OVER DRAWER: KERANJANG BELANJA & CHECKOUT WHATSAPP -->
+  <!-- ============================================================ -->
+  <div id="cart-drawer-overlay" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden transition-opacity" onclick="toggleCartDrawer()"></div>
+  
+  <div id="cart-drawer" class="fixed top-0 right-0 bottom-0 w-full sm:w-[440px] z-50 bg-zinc-950 border-l border-zinc-800 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl">
+    
+    <!-- Cart Header -->
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-zinc-800">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-red-600/20 text-red-500 flex items-center justify-center">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-black text-lg text-white">Keranjang Pesanan</h3>
+            <p class="text-[11px] text-zinc-400">Tom's Kebab Duri</p>
+          </div>
+        </div>
+        <button onclick="toggleCartDrawer()" class="text-zinc-400 hover:text-white p-1.5 rounded-lg bg-zinc-900">
+          ✕
+        </button>
+      </div>
+
+      <!-- Item List Container -->
+      <div id="cart-items-list" class="my-4 max-h-[42vh] overflow-y-auto custom-scrollbar space-y-3 pr-1">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- Checkout Details & WhatsApp trigger -->
+    <div class="border-t border-zinc-800 pt-4 space-y-3">
+      
+      <!-- Order Type -->
+      <div>
+        <label class="block text-[11px] font-bold text-zinc-400 mb-1">Metode Pengambilan:</label>
+        <div class="grid grid-cols-2 gap-2">
+          <label class="flex items-center gap-2 bg-zinc-900 border border-zinc-800 p-2 rounded-lg cursor-pointer text-xs">
+            <input type="radio" name="order-type" value="Takeaway (Ambil di Gerai)" checked onchange="toggleAddressField()" class="accent-red-600">
+            <span class="text-zinc-200">Ambil di Gerai</span>
+          </label>
+          <label class="flex items-center gap-2 bg-zinc-900 border border-zinc-800 p-2 rounded-lg cursor-pointer text-xs">
+            <input type="radio" name="order-type" value="Delivery (Antar ke Rumah)" onchange="toggleAddressField()" class="accent-red-600">
+            <span class="text-zinc-200">Pesan Antar</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Choose Branch -->
+      <div>
+        <label class="block text-[11px] font-bold text-zinc-400 mb-1">Pilih Cabang Terdekat:</label>
+        <select id="cust-branch" class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-red-500">
+          <option value="Cabang Jl. Jend. Sudirman">Cabang Jl. Jend. Sudirman (Utama)</option>
+          <option value="Cabang Jl. Mawar">Cabang Jl. Mawar</option>
+        </select>
+      </div>
+
+      <!-- Customer Name -->
+      <div>
+        <label class="block text-[11px] font-bold text-zinc-400 mb-1">Nama Pemesan:</label>
+        <input type="text" id="cust-name" placeholder="Nama Anda (contoh: Budi)" class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-1.5 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500">
+      </div>
+
+      <!-- Address (Conditional) -->
+      <div id="address-field" class="hidden">
+        <label class="block text-[11px] font-bold text-zinc-400 mb-1">Alamat Antar di Duri:</label>
+        <input type="text" id="cust-address" placeholder="Jl. Sudirman No..., Dekat..." class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-1.5 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-red-500">
+      </div>
+
+      <!-- Total Price Bar -->
+      <div class="bg-zinc-900 p-3 rounded-xl border border-zinc-800 flex items-center justify-between">
+        <span class="text-xs font-semibold text-zinc-300">Total Tagihan:</span>
+        <span id="cart-total-price" class="font-heading font-black text-xl text-amber-400">Rp 0</span>
+      </div>
+
+      <!-- Action Button: Wajib Bayar QRIS Terlebih Dahulu -->
+      <div class="space-y-2">
+        <button onclick="openQrisModal()" class="w-full bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-heading font-bold text-sm uppercase py-3.5 rounded-xl shadow-lg shadow-red-950/60 flex items-center justify-center gap-2 transition active:scale-[0.98]">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/>
+          </svg>
+          <span>Bayar QRIS & Lanjutkan ke WA</span>
+        </button>
+
+        <div class="flex items-center justify-center gap-2 p-2.5 rounded-xl bg-zinc-900/80 border border-zinc-800 text-[11px] text-zinc-400 text-center">
+          <span>🔒</span>
+          <span>Selesaikan pembayaran QRIS terlebih dahulu agar pesanan dapat diproses oleh crew kami.</span>
+        </div>
+      </div>
+
+      <p class="text-[10px] text-zinc-500 text-center">
+        Format pesanan otomatis dibuat rapi & siap kirim ke kasir Tom's Kebab Duri.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: QRIS DINAMIS DENGAN NOMINAL OTOMATIS -->
+  <!-- ============================================================ -->
+  <div id="qris-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-zinc-900 border border-zinc-700/80 rounded-3xl max-w-sm w-full p-6 text-center space-y-4 red-glow relative">
+      <button onclick="closeQrisModal()" class="absolute top-4 right-4 text-zinc-400 hover:text-white p-2 rounded-xl bg-zinc-800 transition">
+        ✕
+      </button>
+
+      <div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-600/20 border border-red-500/40 text-red-400 text-[10px] font-black uppercase tracking-wider mb-2">
+          QRIS Dinamis • Otomatis
+        </div>
+        <h3 class="font-heading font-black text-xl text-white">Scan & Bayar</h3>
+        <p class="text-xs text-zinc-400 mt-0.5">Nominal pembayaran langsung terisi otomatis</p>
+      </div>
+
+      <!-- Merchant Info & Nominal Box -->
+      <div class="bg-zinc-950 p-3.5 rounded-2xl border border-zinc-800">
+        <div class="text-[11px] text-zinc-400">Total Pembayaran:</div>
+        <div id="qris-modal-amount" class="font-heading font-black text-2xl text-amber-400 mt-0.5">Rp 0</div>
+        <div class="text-[10px] text-zinc-500 mt-1">NMID: ID1026569168267 • Hans PC / Tom's Kebab</div>
+      </div>
+
+      <!-- QR Code Canvas Display -->
+      <div class="bg-white p-4 rounded-2xl inline-block shadow-2xl mx-auto border-4 border-zinc-800">
+        <div id="qris-qrcode-container" class="flex items-center justify-center"></div>
+      </div>
+
+      <div class="text-[11px] text-zinc-400 leading-relaxed px-2">
+        Mendukung semua e-wallet & mobile banking:<br>
+        <span class="text-zinc-300 font-semibold">BCA, Mandiri, BRI, BNI, Dana, GoPay, OVO, ShopeePay</span>
+      </div>
+
+      <!-- Upload Bukti Transfer QRIS (Wajib) -->
+      <div class="p-3.5 rounded-2xl bg-zinc-950/90 border border-zinc-800 text-left space-y-2.5">
+        <div class="flex items-center justify-between">
+          <label class="block text-xs font-bold text-white uppercase tracking-wider">
+            Upload Bukti Transfer: <span class="text-red-500">*</span>
+          </label>
+          <span id="proof-status-pill" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-950/80 border border-red-800 text-red-400">
+            Wajib
+          </span>
+        </div>
+        
+        <label for="qris-proof-file" class="flex flex-col items-center justify-center p-3 rounded-xl border border-dashed border-zinc-700 hover:border-amber-500 bg-zinc-900/50 cursor-pointer transition text-center group">
+          <svg class="w-6 h-6 text-zinc-500 group-hover:text-amber-400 transition mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          <span id="proof-filename-display" class="text-xs text-zinc-300 font-semibold group-hover:text-white">
+            Pilih Foto / Screenshot Bukti Transfer
+          </span>
+          <span class="text-[10px] text-zinc-500 mt-0.5">Format JPG, PNG, atau screenshot m-Banking</span>
+          <input type="file" id="qris-proof-file" accept="image/*" class="hidden" onchange="handleProofUpload(event)">
+        </label>
+
+        <!-- Preview Bukti -->
+        <div id="proof-preview-container" class="hidden items-center justify-between p-2 rounded-xl bg-zinc-900 border border-emerald-500/40">
+          <div class="flex items-center gap-2 overflow-hidden">
+            <img id="proof-preview-img" src="" alt="Bukti Transfer" class="w-10 h-10 object-cover rounded-lg border border-zinc-700 shrink-0">
+            <div class="overflow-hidden">
+              <div id="proof-preview-name" class="text-xs text-white font-bold truncate">bukti.jpg</div>
+              <div class="text-[10px] text-emerald-400 font-medium">Foto siap dikirim ke WA</div>
+            </div>
+          </div>
+          <button type="button" onclick="removeProofUpload()" class="text-zinc-500 hover:text-red-400 p-1 text-xs shrink-0">
+            ✕ Hapus
+          </button>
+        </div>
+
+        <label class="flex items-start gap-2 pt-1 cursor-pointer">
+          <input type="checkbox" id="qris-confirm-checkbox" onchange="validateQrisProceedState()" class="accent-emerald-600 mt-0.5 rounded">
+          <span class="text-[11px] text-zinc-300 leading-tight">
+            Saya menyatakan telah mentransfer sesuai nominal di atas dan siap melampirkan screenshot ini di chat WhatsApp.
+          </span>
+        </label>
+      </div>
+
+      <div class="pt-2 flex flex-col gap-2">
+        <button id="btn-proceed-wa" disabled onclick="confirmPaidAndSendWA()" class="w-full bg-zinc-800 text-zinc-500 font-heading font-bold text-xs uppercase py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 transition cursor-not-allowed">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+          </svg>
+          <span id="btn-proceed-text">Upload Bukti Dulu untuk Lanjut ke WhatsApp</span>
+        </button>
+        <button onclick="closeQrisModal()" class="w-full bg-zinc-800/80 hover:bg-zinc-700 text-zinc-300 font-heading font-semibold text-xs py-2 rounded-xl transition">
+          Batal / Kembali ke Keranjang
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING QUICK BOTTOM BAR FOR MOBILE -->
+  <div class="fixed bottom-4 inset-x-4 z-40 sm:hidden">
+    <div class="bg-zinc-900/95 backdrop-blur-md border border-red-600/40 p-3 rounded-2xl red-glow flex items-center justify-between shadow-2xl">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-xl bg-red-600 flex items-center justify-center text-white font-bold text-xs">
+          TK
+        </div>
+        <div>
+          <div class="text-[11px] text-zinc-400">Buka 16:00 - 23:00</div>
+          <div id="mobile-cart-indicator" class="text-xs font-bold text-amber-400">Keranjang: 0 Item</div>
+        </div>
+      </div>
+      <button onclick="toggleCartDrawer()" class="bg-red-600 hover:bg-red-500 text-white font-heading font-bold text-xs px-4 py-2.5 rounded-xl shadow-md">
+        Buka Keranjang
+      </button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: DATA & INTERACTIVITY (NO AI SLOP, HIGH EFFICIENCY) -->
+  <script>
+    // 4 Kategori Makanan Bertumpuk
+    const CATEGORIES = [
+      {
+        id: 'kategori-kebab-putih',
+        key: 'kebab-putih',
+        title: 'Kebab Putih Original',
+        badge: 'KULIT TORTILLA KLASIK',
+        badgeColor: 'border-amber-500/40 bg-amber-950/30 text-amber-300',
+        icon: '🌯',
+        desc: 'Tortilla putih gandum panggang butter renyah dengan isian daging sapi panggang juicy melimpah, sayuran segar & saus racikan khas Tom’s Kebab.'
+      },
+      {
+        id: 'kategori-black-kebab',
+        key: 'black-kebab',
+        title: 'Black Kebab Charcoal',
+        badge: 'CHARCOAL TORTILLA SPESIAL',
+        badgeColor: 'border-red-500/40 bg-red-950/40 text-red-400',
+        icon: '🖤',
+        desc: 'Tortilla hitam arang bambu alami kaya antioksidan bertekstur lebih krispi, dipadukan saus BBQ smoky dan keju lumer melimpah.'
+      },
+      {
+        id: 'kategori-burger',
+        key: 'burger',
+        title: 'Burger Spesial',
+        badge: 'SMOKED PATTY & BUNS',
+        badgeColor: 'border-amber-500/40 bg-amber-950/30 text-amber-400',
+        icon: '🍔',
+        desc: 'Burger daging sapi bakar arang dengan bun lembut bertabur wijen, saus spesial lumer, keju cheddar slice, dan sayuran segar renyah.'
+      },
+      {
+        id: 'kategori-juices',
+        key: 'juices',
+        title: 'Juices & Fresh Drinks',
+        badge: 'SEGAR DINGIN ALAMI',
+        badgeColor: 'border-emerald-500/40 bg-emerald-950/30 text-emerald-400',
+        icon: '🥤',
+        desc: 'Jus buah segar peras murni tanpa pengawet sintetik dan minuman dingin pelepas dahaga sempurna pendamping santap kebab malam.'
+      }
+    ];
+
+    // Menu Database sesuai Daftar Menu Resmi Tom's Kebab
+    const MENU_DATA = [
+      // 1. ORIGINAL KEBAB (KULIT TORTILLA PUTIH)
+      {
+        id: 'orig-kebab-original',
+        category: 'kebab-putih',
+        name: "Kebab Original",
+        tag: 'Favorit',
+        tagColor: 'bg-zinc-800 text-zinc-200',
+        price: 16000,
+        description: "Sayur - Daging",
+        image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-cheese',
+        category: 'kebab-putih',
+        name: "Kebab Cheese",
+        tag: 'Best Seller',
+        tagColor: 'bg-amber-500 text-zinc-950 font-bold',
+        price: 18000,
+        description: "Sayur - Daging - Keju",
+        image: "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-double',
+        category: 'kebab-putih',
+        name: "Kebab Double",
+        tag: 'Daging Ekstra',
+        tagColor: 'bg-red-700 text-white',
+        price: 20000,
+        description: "Sayur - Daging - Double",
+        image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-sosis',
+        category: 'kebab-putih',
+        name: "Kebab Sosis",
+        tag: 'Paling Disukai',
+        tagColor: 'bg-red-600 text-white',
+        price: 20000,
+        description: "Sayur - Daging - Sosis",
+        image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-telur',
+        category: 'kebab-putih',
+        name: "Kebab Telur",
+        tag: 'Gurih Mantap',
+        tagColor: 'bg-amber-600 text-white',
+        price: 20000,
+        description: "Sayur - Daging - Telur",
+        image: "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-meat',
+        category: 'kebab-putih',
+        name: "Kebab Meat",
+        tag: 'Tanpa Sayur 🔥',
+        tagColor: 'bg-red-950 text-red-400 border border-red-700',
+        price: 20000,
+        description: "Daging Tanpa Sayur",
+        image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-campur',
+        category: 'kebab-putih',
+        name: "Kebab Campur",
+        tag: 'Komplit',
+        tagColor: 'bg-amber-500 text-zinc-950 font-bold',
+        price: 20000,
+        description: "Sayur - Daging - Telur - Keju",
+        image: "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'orig-kebab-special',
+        category: 'kebab-putih',
+        name: "Kebab Special",
+        tag: 'Paling Komplit ⭐',
+        tagColor: 'bg-red-600 text-white font-black',
+        price: 20000,
+        description: "Sayur - Daging - Telur - Keju - Sosis",
+        image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+
+      // 2. BLACK KEBAB (CHARCOAL TORTILLA)
+      {
+        id: 'black-kebab-original',
+        category: 'black-kebab',
+        name: "Black Kebab Original",
+        tag: 'Charcoal Khas',
+        tagColor: 'bg-zinc-950 text-red-400 border border-red-800',
+        price: 17000,
+        description: "Sayur - Daging",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-cheese',
+        category: 'black-kebab',
+        name: "Black Kebab Cheese",
+        tag: 'Best Seller Hitam',
+        tagColor: 'bg-amber-500 text-zinc-950 font-bold',
+        price: 19000,
+        description: "Sayur - Daging - Keju",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-double',
+        category: 'black-kebab',
+        name: "Black Kebab Double",
+        tag: 'Daging Double',
+        tagColor: 'bg-red-700 text-white',
+        price: 20000,
+        description: "Sayur - Daging - Double",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-sosis',
+        category: 'black-kebab',
+        name: "Black Kebab Sosis",
+        tag: 'Favorit',
+        tagColor: 'bg-red-600 text-white',
+        price: 20000,
+        description: "Sayur - Daging - Sosis",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-telur',
+        category: 'black-kebab',
+        name: "Black Kebab Telur",
+        tag: 'Pilihan Lezat',
+        tagColor: 'bg-amber-600 text-white',
+        price: 20000,
+        description: "Sayur - Daging - Telur",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-meat',
+        category: 'black-kebab',
+        name: "Black Kebab Meat",
+        tag: 'Tanpa Sayur 🔥',
+        tagColor: 'bg-zinc-950 text-amber-400 border border-amber-600',
+        price: 20000,
+        description: "Daging Tanpa Sayur",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-campur',
+        category: 'black-kebab',
+        name: "Black Kebab Campur",
+        tag: 'Mantap',
+        tagColor: 'bg-amber-500 text-zinc-950 font-bold',
+        price: 20000,
+        description: "Sayur - Daging - Telur - Keju",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'black-kebab-special',
+        category: 'black-kebab',
+        name: "Black Kebab Special",
+        tag: 'Ultimate Black ⭐',
+        tagColor: 'bg-gradient-to-r from-red-600 to-amber-600 text-white font-black',
+        price: 20000,
+        description: "Sayur - Daging - Telur - Keju - Sosis",
+        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+
+      // 3. BURGER
+      {
+        id: 'burger-special-beef',
+        category: 'burger',
+        name: "Tom's Beef Burger Special",
+        tag: 'Best Seller',
+        tagColor: 'bg-red-700 text-white',
+        price: 24000,
+        description: "Patty sapi tebal panggang bakar arang, telur mata sapi, keju cheddar slice, selada segar, timun & caramelized onion.",
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'burger-double-cheese-beef',
+        category: 'burger',
+        name: "Double Cheese Smash Burger",
+        tag: 'Porsi Jumbo',
+        tagColor: 'bg-amber-600 text-white',
+        price: 29000,
+        description: "Double beef patty panggang empuk dengan lapisan lelehan keju double cheddar & saus thousand island racikan khas.",
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+      {
+        id: 'burger-crispy-chicken',
+        category: 'burger',
+        name: "Crispy Chicken Mayo Burger",
+        tag: 'Renyah Gurih',
+        tagColor: 'bg-zinc-800 text-zinc-200',
+        price: 21000,
+        description: "Fillet paha ayam krispi tebal dengan balutan mayones lembut, saus sambal, selada renyah dan roti bertabur wijen panggang.",
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: true
+      },
+
+      // 4. JUICES & FRESH DRINKS
+      {
+        id: 'juice-alpukat-kocok',
+        category: 'juices',
+        name: "Jus Alpukat Kocok Coklat Pekat",
+        tag: 'Segar Kental',
+        tagColor: 'bg-emerald-600 text-white',
+        price: 15000,
+        description: "Alpukat mentega asli dikocok kental dengan lumuran susu kental manis coklat pekat dan es serut dingin.",
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: false
+      },
+      {
+        id: 'juice-mangga-arumanis',
+        category: 'juices',
+        name: "Jus Mangga Murni Segar",
+        tag: 'Manis Alami',
+        tagColor: 'bg-amber-500 text-zinc-950',
+        price: 14000,
+        description: "Mangga segar manis harum diblender kental dingin, kaya vitamin C dan tanpa pemanis buatan.",
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: false
+      },
+      {
+        id: 'juice-jeruk-peras',
+        category: 'juices',
+        name: "Es Jeruk Peras Murni",
+        tag: 'Pelepas Dahaga',
+        tagColor: 'bg-amber-500 text-zinc-950',
+        price: 10000,
+        description: "Jeruk peras murni diperas langsung saat dipesan. Asam manis segar dan dingin melegakan tenggorokan.",
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: false
+      },
+      {
+        id: 'juice-naga-merah',
+        category: 'juices',
+        name: "Jus Buah Naga Merah Segar",
+        tag: 'Sehat & Segar',
+        tagColor: 'bg-rose-600 text-white',
+        price: 14000,
+        description: "Buah naga merah segar kaya serat dipadukan es dingin dan susu lembut pas untuk santap malam.",
+        image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80",
+        hasCustomization: false
+      }
+    ];
+
+    // Helper Format Rupiah
+    function formatRupiah(number) {
+      return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(number);
+    }
+
+    // Render Menu Bertumpuk (4 Kategori)
+    function renderStackedMenu() {
+      const container = document.getElementById('stacked-menu-container');
+      if (!container) return;
+
+      container.innerHTML = CATEGORIES.map((cat, idx) => {
+        const catItems = MENU_DATA.filter(item => item.category === cat.key);
+        return `
+          <div id="${cat.id}" class="scroll-mt-36">
+            
+            <!-- Category Section Header -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-4 mb-8 border-b border-zinc-800">
+              <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border ${cat.badgeColor} text-[11px] font-bold tracking-wider uppercase mb-2">
+                  <span>${cat.icon}</span>
+                  <span>${cat.badge}</span>
+                </div>
+                <h3 class="font-heading font-black text-2xl sm:text-3xl text-white tracking-tight">
+                  ${cat.title}
+                </h3>
+                <p class="text-xs sm:text-sm text-zinc-400 mt-1 max-w-2xl leading-relaxed">
+                  ${cat.desc}
+                </p>
+              </div>
+              <div class="text-xs text-zinc-500 font-semibold shrink-0">
+                ${catItems.length} Pilihan Menu
+              </div>
+            </div>
+
+            <!-- Category Items Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              ${catItems.map(item => `
+                <div class="bg-zinc-900/90 border border-zinc-800 rounded-3xl overflow-hidden hover:border-red-500/50 transition duration-300 flex flex-col justify-between group shadow-lg">
+                  <div>
+                    <div class="relative h-48 w-full overflow-hidden bg-zinc-950">
+                      <img 
+                        src="${item.image}" 
+                        alt="${item.name}" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                        loading="lazy"
+                      />
+                      <div class="absolute top-3 left-3 ${item.tagColor} text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full shadow">
+                        ${item.tag}
+                      </div>
+                    </div>
+
+                    <div class="p-5">
+                      <div class="flex items-start justify-between gap-2">
+                        <h4 class="font-heading font-bold text-base text-white group-hover:text-red-400 transition leading-snug">${item.name}</h4>
+                      </div>
+                      <p class="text-xs text-zinc-400 mt-2 leading-relaxed line-clamp-2">${item.description}</p>
+                    </div>
+                  </div>
+
+                  <div class="px-5 pb-5 pt-2 border-t border-zinc-800/60 flex items-center justify-between">
+                    <div>
+                      <span class="text-[10px] text-zinc-500 uppercase tracking-wider font-semibold">Harga</span>
+                      <div class="font-heading font-black text-lg text-amber-400">${formatRupiah(item.price)}</div>
+                    </div>
+                    <button 
+                      onclick="handleItemClick('${item.id}')"
+                      class="inline-flex items-center gap-1.5 bg-red-600 hover:bg-red-500 text-white font-heading font-bold text-xs uppercase px-4 py-2.5 rounded-xl shadow-md transition"
+                    >
+                      <span>${item.hasCustomization ? 'Pilih Opsi' : '+ Tambah'}</span>
+                    </button>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    // State
+    let cart = [];
+    let currentItemForModal = null;
+    let modalQty = 1;
+
+    // Helper Format Rupiah
+    function formatRupiah(number) {
+      return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(number);
+    }
+
+    // Modal Handling
+    function handleItemClick(itemId) {
+      const item = MENU_DATA.find(i => i.id === itemId);
+      if (!item) return;
+
+      if (!item.hasCustomization) {
+        // Direct add to cart for simple drinks/snacks
+        addToCart({
+          id: item.id + '-' + Date.now(),
+          baseId: item.id,
+          name: item.name,
+          unitPrice: item.price,
+          price: item.price,
+          qty: 1,
+          size: 'Standar',
+          spicy: '-',
+          toppings: [],
+          notes: ''
+        });
+        showToast(`Berhasil menambahkan ${item.name}!`);
+        return;
+      }
+
+      // Open customization modal
+      currentItemForModal = item;
+      modalQty = 1;
+      const qtyDisplay = document.getElementById('modal-qty-display');
+      if (qtyDisplay) qtyDisplay.textContent = '1';
+      document.getElementById('modal-title').textContent = item.name;
+      document.getElementById('modal-desc').textContent = item.description;
+      document.getElementById('modal-notes').value = '';
+
+      // Reset options
+      const spicyRadios = document.querySelectorAll('input[name="item-spicy"]');
+      if (spicyRadios[0]) spicyRadios[0].checked = true;
+
+      document.querySelectorAll('input[name="item-topping"]').forEach(cb => cb.checked = false);
+
+      calculateModalTotal();
+      document.getElementById('customize-modal').classList.remove('hidden');
+      document.getElementById('customize-modal').classList.add('flex');
+    }
+
+    function adjustModalQty(delta) {
+      modalQty += delta;
+      if (modalQty < 1) modalQty = 1;
+      const qtyDisplay = document.getElementById('modal-qty-display');
+      if (qtyDisplay) qtyDisplay.textContent = modalQty;
+      calculateModalTotal();
+    }
+
+    function closeModal() {
+      document.getElementById('customize-modal').classList.add('hidden');
+      document.getElementById('customize-modal').classList.remove('flex');
+      currentItemForModal = null;
+      modalQty = 1;
+    }
+
+    function calculateModalTotal() {
+      if (!currentItemForModal) return;
+      let unitPrice = currentItemForModal.price;
+
+      // Topping price
+      document.querySelectorAll('input[name="item-topping"]:checked').forEach(cb => {
+        unitPrice += parseInt(cb.getAttribute('data-price') || '0', 10);
+      });
+
+      const total = unitPrice * modalQty;
+      document.getElementById('modal-total-display').textContent = formatRupiah(total);
+      return { unitPrice, total };
+    }
+
+    function confirmAddToCart() {
+      if (!currentItemForModal) return;
+
+      const selectedSpicy = document.querySelector('input[name="item-spicy"]:checked');
+      const spicyLevel = selectedSpicy ? selectedSpicy.value : 'Normal';
+
+      let toppingList = [];
+      let toppingExtra = 0;
+      document.querySelectorAll('input[name="item-topping"]:checked').forEach(cb => {
+        toppingList.push(cb.value);
+        toppingExtra += parseInt(cb.getAttribute('data-price') || '0', 10);
+      });
+
+      const notes = document.getElementById('modal-notes').value.trim();
+      const unitPrice = currentItemForModal.price + toppingExtra;
+      const finalPrice = unitPrice * modalQty;
+
+      addToCart({
+        id: currentItemForModal.id + '-' + Date.now(),
+        baseId: currentItemForModal.id,
+        name: currentItemForModal.name,
+        unitPrice: unitPrice,
+        price: finalPrice,
+        qty: modalQty,
+        size: '-',
+        spicy: spicyLevel,
+        toppings: toppingList,
+        notes: notes
+      });
+
+      closeModal();
+      showToast(`Berhasil menambahkan ${modalQty}x ${currentItemForModal.name}!`);
+    }
+
+    // Quick Add from Hero
+    function quickAddHeroItem() {
+      addToCart({
+        id: 'hero-item-' + Date.now(),
+        baseId: 'orig-kebab-special',
+        name: "Kebab Special (Sayur - Daging - Telur - Keju - Sosis)",
+        unitPrice: 20000,
+        price: 20000,
+        qty: 1,
+        size: '-',
+        spicy: 'Normal',
+        toppings: [],
+        notes: 'Menu komplit spesial'
+      });
+      showToast('Kebab Special Komplit ditambahkan!');
+    }
+
+    // Add Promo Package
+    function addPromoPackage() {
+      addToCart({
+        id: 'promo-malam-' + Date.now(),
+        baseId: 'promo-malam',
+        name: "Paket Komplit: Kebab Special + Es Jeruk Peras Murni",
+        unitPrice: 28000,
+        price: 28000,
+        qty: 1,
+        size: '-',
+        spicy: 'Normal',
+        toppings: ['Paket Promo Malam'],
+        notes: 'Paket Hemat Malam'
+      });
+      showToast('Paket Promo Komplit ditambahkan ke keranjang!');
+    }
+
+    // Cart Management
+    function addToCart(cartItem) {
+      // Check if identical item already in cart
+      const existingIndex = cart.findIndex(i => 
+        i.baseId === cartItem.baseId &&
+        i.spicy === cartItem.spicy &&
+        JSON.stringify(i.toppings) === JSON.stringify(cartItem.toppings) &&
+        i.notes === cartItem.notes
+      );
+
+      if (existingIndex > -1) {
+        cart[existingIndex].qty += cartItem.qty;
+        cart[existingIndex].price = cart[existingIndex].unitPrice * cart[existingIndex].qty;
+      } else {
+        cart.push(cartItem);
+      }
+      updateCartUI();
+    }
+
+    function changeCartItemQty(index, delta) {
+      if (!cart[index]) return;
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) {
+        cart.splice(index, 1);
+      } else {
+        cart[index].price = cart[index].unitPrice * cart[index].qty;
+      }
+      updateCartUI();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      // Badges
+      const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+      document.getElementById('cart-count-badge').textContent = totalItems;
+      document.getElementById('mobile-cart-indicator').textContent = `Keranjang: ${totalItems} Item`;
+
+      // Total
+      const total = cart.reduce((acc, item) => acc + item.price, 0);
+      document.getElementById('cart-total-price').textContent = formatRupiah(total);
+
+      // List
+      const listContainer = document.getElementById('cart-items-list');
+      if (cart.length === 0) {
+        listContainer.innerHTML = `
+          <div class="py-12 text-center text-zinc-500">
+            <div class="text-4xl mb-2">🌯</div>
+            <p class="text-sm font-semibold">Keranjang masih kosong</p>
+            <p class="text-xs text-zinc-600 mt-1">Pilih menu favoritmu di atas!</p>
+          </div>
+        `;
+        return;
+      }
+
+      listContainer.innerHTML = cart.map((item, idx) => `
+        <div class="p-3.5 bg-zinc-900 border border-zinc-800 rounded-2xl flex items-start justify-between gap-3 shadow-md">
+          <div class="flex-1">
+            <div class="font-bold text-xs text-white">${item.name}</div>
+            <div class="text-[11px] text-zinc-400 mt-0.5">
+              ${item.spicy && item.spicy !== '-' ? `Saus: <span class="text-amber-400 font-semibold">${item.spicy}</span>` : ''}
+            </div>
+            ${item.toppings.length > 0 ? `
+              <div class="text-[10px] text-amber-400 mt-0.5">
+                + ${item.toppings.join(', ')}
+              </div>
+            ` : ''}
+            ${item.notes ? `
+              <div class="text-[10px] text-zinc-500 italic mt-0.5">
+                "${item.notes}"
+              </div>
+            ` : ''}
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-[11px] text-zinc-400">@ ${formatRupiah(item.unitPrice)}</span>
+              <span class="font-heading font-black text-xs text-amber-400">${formatRupiah(item.price)}</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-end gap-2 shrink-0">
+            <button onclick="removeFromCart(${idx})" class="text-zinc-500 hover:text-red-400 p-1 text-xs" title="Hapus item">
+              ✕
+            </button>
+            <div class="flex items-center gap-1.5 bg-zinc-950 border border-zinc-800 rounded-lg p-1">
+              <button onclick="changeCartItemQty(${idx}, -1)" class="w-6 h-6 rounded bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold flex items-center justify-center transition">
+                −
+              </button>
+              <span class="text-xs font-heading font-bold text-white w-5 text-center">${item.qty}</span>
+              <button onclick="changeCartItemQty(${idx}, 1)" class="w-6 h-6 rounded bg-red-600 hover:bg-red-500 text-white text-xs font-bold flex items-center justify-center transition">
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Toggle Cart Drawer
+    function toggleCartDrawer() {
+      const drawer = document.getElementById('cart-drawer');
+      const overlay = document.getElementById('cart-drawer-overlay');
+      const isClosed = drawer.classList.contains('translate-x-full');
+
+      if (isClosed) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      } else {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      }
+    }
+
+    // ============================================================
+    // QRIS DINAMIS: CRC16-CCITT & GENERATOR
+    // ============================================================
+    const QRIS_BASE_STRING = '00020101021126570011ID.DANA.WWW011893600915303400497402090340049740303UMI51440014ID.CO.QRIS.WWW0215ID10265691682670303UMI5204599953033605802ID5907Hans PC6015Kota Lhokseumaw610524311630412E9';
+
+    function crc16Ccitt(str) {
+      let crc = 0xFFFF;
+      for (let i = 0; i < str.length; i++) {
+        crc ^= str.charCodeAt(i) << 8;
+        for (let j = 0; j < 8; j++) {
+          if ((crc & 0x8000) !== 0) {
+            crc = ((crc << 1) ^ 0x1021) & 0xFFFF;
+          } else {
+            crc = (crc << 1) & 0xFFFF;
+          }
+        }
+      }
+      return crc.toString(16).toUpperCase().padStart(4, '0');
+    }
+
+    function generateDynamicQrisPayload(amount) {
+      // 1. Ubah flag dari 010211 (statis) ke 010212 (dinamis)
+      let qris = QRIS_BASE_STRING.replace('010211', '010212');
+
+      // 2. Potong tag 6304 dan checksum lama di belakang (8 karakter)
+      qris = qris.slice(0, -8);
+
+      // 3. Buat Tag 54 (Transaction Amount)
+      const amtStr = Math.round(amount).toString();
+      const amtTag = '54' + amtStr.length.toString().padStart(2, '0') + amtStr;
+
+      // 4. Masukkan Tag 54 sebelum Tag 5802ID
+      const tag58Idx = qris.indexOf('5802ID');
+      if (tag58Idx !== -1) {
+        qris = qris.slice(0, tag58Idx) + amtTag + qris.slice(tag58Idx);
+      } else {
+        qris += amtTag;
+      }
+
+      // 5. Tambahkan tag 6304 dan hitung ulang CRC16
+      qris += '6304';
+      const newCrc = crc16Ccitt(qris);
+      return qris + newCrc;
+    }
+
+    let qrcodeInstance = null;
+    let uploadedProofFile = null;
+
+    function handleProofUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      uploadedProofFile = file;
+
+      // Update UI
+      const previewContainer = document.getElementById('proof-preview-container');
+      const previewImg = document.getElementById('proof-preview-img');
+      const previewName = document.getElementById('proof-preview-name');
+      const pill = document.getElementById('proof-status-pill');
+
+      previewName.textContent = file.name;
+      pill.textContent = 'Terlampir ✓';
+      pill.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-950/80 border border-emerald-700 text-emerald-400';
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        previewImg.src = e.target.result;
+        previewContainer.classList.remove('hidden');
+        previewContainer.classList.add('flex');
+        validateQrisProceedState();
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function removeProofUpload() {
+      uploadedProofFile = null;
+      document.getElementById('qris-proof-file').value = '';
+      const previewContainer = document.getElementById('proof-preview-container');
+      previewContainer.classList.add('hidden');
+      previewContainer.classList.remove('flex');
+      
+      const pill = document.getElementById('proof-status-pill');
+      pill.textContent = 'Wajib';
+      pill.className = 'text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-950/80 border border-red-800 text-red-400';
+
+      validateQrisProceedState();
+    }
+
+    function validateQrisProceedState() {
+      const checkbox = document.getElementById('qris-confirm-checkbox');
+      const btn = document.getElementById('btn-proceed-wa');
+      const text = document.getElementById('btn-proceed-text');
+
+      const isReady = uploadedProofFile !== null && checkbox.checked;
+
+      if (isReady) {
+        btn.disabled = false;
+        btn.className = 'w-full bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white font-heading font-bold text-xs uppercase py-3.5 rounded-xl shadow-lg shadow-emerald-950 flex items-center justify-center gap-2 transition active:scale-95 cursor-pointer';
+        text.textContent = 'Kirim Pesanan & Bukti Transfer ke WhatsApp';
+      } else {
+        btn.disabled = true;
+        btn.className = 'w-full bg-zinc-800 text-zinc-500 font-heading font-bold text-xs uppercase py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 transition cursor-not-allowed';
+        if (!uploadedProofFile) {
+          text.textContent = 'Upload Bukti Dulu untuk Lanjut ke WhatsApp';
+        } else {
+          text.textContent = 'Centang Pernyataan di Atas';
+        }
+      }
+    }
+
+    function openQrisModal() {
+      const total = cart.reduce((acc, item) => acc + item.price, 0);
+      if (total <= 0) {
+        alert('Keranjang belanja masih kosong! Silakan pilih menu terlebih dahulu.');
+        return;
+      }
+
+      // Reset proof state on open
+      removeProofUpload();
+      const checkbox = document.getElementById('qris-confirm-checkbox');
+      if (checkbox) checkbox.checked = false;
+      validateQrisProceedState();
+
+      document.getElementById('qris-modal-amount').textContent = formatRupiah(total);
+      const payload = generateDynamicQrisPayload(total);
+
+      const qrContainer = document.getElementById('qris-qrcode-container');
+      qrContainer.innerHTML = '';
+
+      if (typeof QRCode !== 'undefined') {
+        qrcodeInstance = new QRCode(qrContainer, {
+          text: payload,
+          width: 220,
+          height: 220,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.M
+        });
+      } else {
+        qrContainer.innerHTML = `<img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${encodeURIComponent(payload)}" alt="QRIS QR Code" class="w-[220px] h-[220px]" />`;
+      }
+
+      const modal = document.getElementById('qris-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeQrisModal() {
+      const modal = document.getElementById('qris-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function confirmPaidAndSendWA() {
+      if (!uploadedProofFile) {
+        alert('Mohon upload bukti transfer QRIS terlebih dahulu.');
+        return;
+      }
+      const checkbox = document.getElementById('qris-confirm-checkbox');
+      if (!checkbox.checked) {
+        alert('Mohon centang konfirmasi bahwa Anda telah mentransfer.');
+        return;
+      }
+      closeQrisModal();
+      checkoutViaWhatsApp(true, uploadedProofFile.name);
+    }
+
+    // Toggle Address Input
+    function toggleAddressField() {
+      const orderType = document.querySelector('input[name="order-type"]:checked').value;
+      const addrContainer = document.getElementById('address-field');
+      if (orderType.includes('Delivery')) {
+        addrContainer.classList.remove('hidden');
+      } else {
+        addrContainer.classList.add('hidden');
+      }
+    }
+
+    // WhatsApp Checkout Formatter (Real Authentic Indonesian Message, Anti AI Slop)
+    function checkoutViaWhatsApp(isPaidQris = false, proofFileName = '') {
+      if (cart.length === 0) {
+        alert('Keranjang belanja masih kosong! Silakan pilih menu terlebih dahulu.');
+        return;
+      }
+
+      const name = document.getElementById('cust-name').value.trim() || 'Pelanggan Tom’s Kebab';
+      const branch = document.getElementById('cust-branch') ? document.getElementById('cust-branch').value : 'Cabang Utama';
+      const orderType = document.querySelector('input[name="order-type"]:checked').value;
+      const address = document.getElementById('cust-address').value.trim();
+
+      if (orderType.includes('Delivery') && !address) {
+        alert('Mohon masukkan alamat lengkap pengantaran di area Duri.');
+        document.getElementById('cust-address').focus();
+        return;
+      }
+
+      const total = cart.reduce((acc, item) => acc + item.price, 0);
+
+      // Construct Neat WhatsApp Message (Tanpa emotikon/simbol yang rusak di WA)
+      let text = `*HALO TOM'S KEBAB DURI, SAYA MAU PESAN:*\n\n`;
+      text += `* Nama Pemesan: ${name}\n`;
+      text += `* Tujuan Cabang: ${branch}\n`;
+      text += `* Metode: ${orderType}\n`;
+      text += `* Status Bayar: SUDAH LUNAS VIA QRIS\n`;
+      if (proofFileName) {
+        text += `* File Bukti: ${proofFileName}\n`;
+      }
+      if (orderType.includes('Delivery')) {
+        text += `* Alamat Antar: ${address}\n`;
+      }
+      text += `------------------------------------\n`;
+      text += `*RINCIAN PESANAN:*\n`;
+
+      cart.forEach((item, i) => {
+        text += `\n${i + 1}. *${item.name}* [${item.qty} porsi] = ${formatRupiah(item.price)}\n`;
+        if (item.spicy && item.spicy !== '-') text += `   - Racikan/Saus: ${item.spicy}\n`;
+        if (item.toppings && item.toppings.length > 0) text += `   - Topping: ${item.toppings.join(', ')}\n`;
+        if (item.notes) text += `   - Catatan: "${item.notes}"\n`;
+      });
+
+      text += `\n------------------------------------\n`;
+      text += `*TOTAL PEMBAYARAN: ${formatRupiah(total)}*\n\n`;
+      text += `Saya sudah menyelesaikan pembayaran via scan QRIS sebesar ${formatRupiah(total)}. Berikut saya kirimkan screenshot bukti transfernya di chat ini. Mohon segera diproses dan disiapkan oleh crew Tom's Kebab ya. Terima kasih!`;
+
+      const encoded = encodeURIComponent(text);
+      // WhatsApp Number routing based on chosen branch
+      let waNumber = "6281933564845"; // Default Jl. Sudirman
+      if (branch && branch.toLowerCase().includes('mawar')) {
+        waNumber = "6287792827956"; // Cabang Jl. Mawar
+      }
+      window.open(`https://wa.me/${waNumber}?text=${encoded}`, '_blank');
+    }
+
+    // Select Franchise Package from Card
+    function selectFranchisePackage(pkgName) {
+      const select = document.getElementById('fran-package');
+      if (select) {
+        select.value = pkgName;
+      }
+      const formBox = document.getElementById('franchise-form-box');
+      if (formBox) {
+        formBox.scrollIntoView({ behavior: 'smooth' });
+        showToast(`Paket dipilih: ${pkgName}`);
+      }
+    }
+
+    // Submit Franchise Application via WhatsApp
+    function submitFranchiseApplication(e) {
+      e.preventDefault();
+      const name = document.getElementById('fran-name').value.trim();
+      const phone = document.getElementById('fran-phone').value.trim();
+      const city = document.getElementById('fran-city').value.trim();
+      const pkg = document.getElementById('fran-package').value;
+      const locStatus = document.querySelector('input[name="fran-loc-status"]:checked').value;
+      const notes = document.getElementById('fran-notes').value.trim();
+
+      if (!name || !phone || !city) {
+        alert('Mohon lengkapi Nama, No. WhatsApp, dan Rencana Kota Buka Usaha.');
+        return;
+      }
+
+      let text = `*PENGAJUAN KEMITRAAN / FRANCHISE TOM'S KEBAB*\n\n`;
+      text += `Halo Manajemen Tom's Kebab, saya berminat untuk bermitra dan membuka cabang baru:\n\n`;
+      text += `* Nama Calon Mitra: ${name}\n`;
+      text += `* No. WhatsApp: ${phone}\n`;
+      text += `* Rencana Kota / Lokasi: ${city}\n`;
+      text += `* Pilihan Paket: ${pkg}\n`;
+      text += `* Status Lokasi Saat Ini: ${locStatus}\n`;
+      if (notes) {
+        text += `* Catatan / Pertanyaan: "${notes}"\n`;
+      }
+      text += `\nMohon info proposal kemitraan lengkap, estimasi jadwal, dan langkah selanjutnya ya. Terima kasih!`;
+
+      const encoded = encodeURIComponent(text);
+      const franchiseWaNumber = "6281933564845"; // WhatsApp kemitraan
+      window.open(`https://wa.me/${franchiseWaNumber}?text=${encoded}`, '_blank');
+      showToast('Membuka WhatsApp Kemitraan...');
+    }
+
+    // Simple FAQ Accordion Toggle
+    function toggleFaq(header) {
+      const p = header.nextElementSibling;
+      const icon = header.querySelector('span:last-child');
+      if (p.classList.contains('hidden')) {
+        p.classList.remove('hidden');
+        icon.textContent = '−';
+      } else {
+        p.classList.add('hidden');
+        icon.textContent = '+';
+      }
+    }
+
+    // Toast Notification
+    function showToast(msg) {
+      const existing = document.getElementById('live-toast');
+      if (existing) existing.remove();
+
+      const toast = document.createElement('div');
+      toast.id = 'live-toast';
+      toast.className = 'fixed top-24 right-4 z-50 bg-red-600 text-white font-heading font-bold text-xs px-4 py-3 rounded-xl shadow-xl flex items-center gap-2 border border-red-400/30 animate-bounce';
+      toast.innerHTML = `<span>✓</span> <span>${msg}</span>`;
+      document.body.appendChild(toast);
+
+      setTimeout(() => {
+        if (toast) toast.remove();
+      }, 2500);
+    }
+
+    // Initial load
+    window.addEventListener('DOMContentLoaded', () => {
+      renderStackedMenu();
+      updateCartUI();
+    });
+  </script>
+</body>
+</html>
+
